@@ -81,11 +81,11 @@ let myWord
 
  myWord = prompt("What is your second word?");
 
- if (userWord == secretWord|| myWord == secretWord){
+ if ((userWord!=secretWord && myWord == secretWord)||(userWord==secretWord && myWord!=secretWord)) {
      alert (" You got in...but only because one of your words matched the secret word ");
 
  }
- else if (userWord == myWord){
+ else if ((userWord == myWord)&&(userWord!=secretWord)&&(myWord!=secretWord) ){
      alert("You got in...but we don't know how");
 
  }
@@ -94,5 +94,5 @@ let myWord
 
  }
 else{
-    alert("Locked Out")
+    alert("Locked Out");
 }
