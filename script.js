@@ -6,6 +6,8 @@ let firstNumber;
 let secondNumber;
 let results;
 let secretWord;
+let userWord;
+let myWord
 //Problem 1
 
 //prompt the user to enter a word
@@ -50,27 +52,47 @@ let secretWord;
 
 //Problem 3 
 
-//Ask the user for a number while converting it from a string to an integer
-firstNumber= parseInt(prompt("What is your first number?"));
+// //Ask the user for a number while converting it from a string to an integer
+// firstNumber= parseInt(prompt("What is your first number?"));
 
-//Ask the user for a second number while converting it from a string to an integer 
-secondNumber= parseInt(prompt("What is your second number?"));
+// //Ask the user for a second number while converting it from a string to an integer 
+// secondNumber= parseInt(prompt("What is your second number?"));
 
 
-//Add them together to get a sum
-results  = firstNumber + secondNumber
+// //Add them together to get a sum
+// results  = firstNumber + secondNumber;
 
-//Using modulo to see if the sum is even by checking if the remainder is zero
- if (results % 2 == 0 ){
-     alert (results + " is an even number");
- }
+// //Using modulo to see if the sum is even by checking if the remainder is zero
+//  if (results % 2 == 0 ){
+//      alert (results + " is an even number");
+//  }
 
- //If the modulo is anything but zero it is odd
- else{
-     alert (results + " is an odd number");
- }
+//  //If the modulo is anything but zero it is odd
+//  else{
+//      alert (results + " is an odd number");
+//  }
 
 
  //Problem 4
 
- 
+ secretWord = "secret";
+
+ userWord = prompt("What is your first word?");
+
+ myWord = prompt("What is your second word?");
+
+ if (userWord == secretWord|| myWord == secretWord){
+     alert (" You got in...but only because one of your words matched the secret word ");
+
+ }
+ else if (userWord == myWord){
+     alert("You got in...but we don't know how");
+
+ }
+ else if (userWord == secretWord && myWord ==secretWord){
+     alert(" You got in");
+
+ }
+else{
+    alert("Locked Out")
+}
