@@ -8,9 +8,9 @@ let results;
 let secretWord;
 let userWord;
 let myWord
-//Problem 1
+// //Problem 1
 
-//prompt the user to enter a word
+// // prompt the user to enter a word
 
 // anyWord = prompt("Enter a word");
 
@@ -29,12 +29,12 @@ let myWord
 //     alert("That is incorrect! Try Again!!");
 // }
 
-//Problem 2 
+// // Problem 2 
 
-//Ask user for a number
+// // Ask user for a number
 // number = prompt("Enter a number");
 
-//if number is greater than zero, it is positive
+// // if number is greater than zero, it is positive
 // if (number > 0) {
 //     alert(number + " is positive");
 
@@ -50,7 +50,7 @@ let myWord
 
 // }
 
-//Problem 3 
+// // Problem 3 
 
 // //Ask the user for a number while converting it from a string to an integer
 // firstNumber= parseInt(prompt("What is your first number?"));
@@ -73,26 +73,26 @@ let myWord
 //  }
 
 
- //Problem 4
+// //  Problem 4
 
- secretWord = "secret";
+//  secretWord = "secret";
 
- userWord = prompt("What is your first word?");
+//  userWord = prompt("What is your first word?");
 
- myWord = prompt("What is your second word?");
+//  myWord = prompt("What is your second word?");
 
- if ((userWord!=secretWord && myWord == secretWord)||(userWord==secretWord && myWord!=secretWord)) {
-     alert (" You got in...but only because one of your words matched the secret word ");
+//  if ((userWord!=secretWord && myWord == secretWord)||(userWord==secretWord && myWord!=secretWord)) {
+//      alert (" You got in...but only because one of your words matched the secret word ");
 
- }
- else if ((userWord == myWord)&&(userWord!=secretWord)&&(myWord!=secretWord) ){
-     alert("You got in...but we don't know how");
+//  }
+//  else if ((userWord == myWord)&&(userWord!=secretWord)&&(myWord!=secretWord) ){
+//      alert("You got in...but we don't know how");
 
- }
- else if (userWord == secretWord && myWord ==secretWord){
-     alert(" You got in");
+//  }
+//  else if (userWord == secretWord && myWord ==secretWord){
+//      alert(" You got in");
 
- }
-else{
-    alert("Locked Out");
-}
+//  }
+// else{
+//     alert("Locked Out");
+// }
